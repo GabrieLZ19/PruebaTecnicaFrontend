@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gestión de Usuarios
 
-## Getting Started
+Este es un proyecto de ejemplo creado con [Next.js](https://nextjs.org) que permite gestionar usuarios. Incluye funcionalidades para listar, agregar, editar y eliminar usuarios.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Listar usuarios**: Muestra una lista de usuarios obtenidos desde una API externa.
+- **Agregar usuarios**: Permite agregar nuevos usuarios a la lista.
+- **Editar usuarios**: Permite modificar el nombre de un usuario existente.
+- **Eliminar usuarios**: Permite eliminar usuarios de la lista.
+
+## Tecnologías utilizadas
+
+- **Next.js**: Framework de React para aplicaciones web.
+- **React**: Biblioteca para construir interfaces de usuario.
+- **Tailwind CSS**: Framework de CSS para estilos rápidos y consistentes.
+- **Fetch API**: Para obtener datos desde una API externa.
+
+## Estructura del proyecto
+
+```
+prueba-frontend/
+├── src/
+│   ├── app/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.jsx
+│   ├── components/
+│       ├── UserForm.jsx
+│       ├── UserItem.jsx
+│       └── UserList.jsx
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clona este repositorio:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone <https://github.com/GabrieLZ19/PruebaTecnicaFrontend.git>
+   cd prueba-frontend
+   ```
 
-## Learn More
+2. Instala las dependencias:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Uso
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Inicia el servidor de desarrollo:
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Scripts disponibles
+
+- `dev`: Inicia el servidor de desarrollo.
+- `build`: Construye la aplicación para producción.
+- `start`: Inicia la aplicación en modo producción.
+- `lint`: Ejecuta ESLint para verificar errores de código.
+
+## Personalización
+
+Puedes personalizar los estilos en el archivo [`globals.css`](src/app/globals.css) y modificar los componentes en la carpeta [`components`](src/components/).
+
+## API utilizada
+
+Este proyecto utiliza la API pública de [JSONPlaceholder](https://jsonplaceholder.typicode.com/) para obtener datos de usuarios.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT.
